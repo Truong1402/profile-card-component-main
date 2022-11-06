@@ -1,0 +1,157 @@
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans',sans-serif;
+    background: var(--Dark-cyan);
+    flex-direction: column;
+    background-image:   url(./images/bg-pattern-top.svg), 
+                        url(./images/bg-pattern-bottom.svg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 329%, 300%;
+    
+}
+
+
+.container
+{
+    background-color:rgb(255, 255, 255);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .header
+{
+    background-image: url(./images/bg-pattern-card.svg);
+    width: 19rem;
+    height: 10rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.header .top
+{
+    height: 200px;
+}
+
+.container .avatar
+{
+    position: absolute;
+    top: 26%;
+    left: 34%;
+}
+
+.avatar img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.container .info
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container .thongtin
+{   
+    width: 100%;
+    height: 9rem;
+    background:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 27px;
+    margin-top: -4px;
+    letter-spacing: .5px;
+    gap: 2px;
+    font-size: 17px;
+}
+
+.thongtin h3
+{
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.thongtin span
+{
+       
+        font-weight: 400;
+        color: var(--Dark-grayish-blue);
+        margin-left: 6px;
+}
+
+.thongtin p{
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+
+}
+
+.info .line
+{
+    background-color: var(--Dark-grayish-blue);
+    width: 100%;
+    height: 1px;
+    opacity: 0.4;
+}
+
+.info .followers
+{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    gap: 2rem;
+    font-size: 13px;
+    margin: 5px 0;
+    border-radius: 10px
+}
+.followers .follower-item{
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* line-height: 21px; */
+    gap: 5px;
+}
+
+.follower-item h2{
+    color: var(--Very-dark-desaturated-blue);
+}
+.follower-item p
+{
+opacity: .5;
+}
